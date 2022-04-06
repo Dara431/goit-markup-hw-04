@@ -69,7 +69,6 @@ header {
 .site-nav .item:last-child {
   margin-right: 0;
 }
-
 .site-nav .link {
   display: block;
   padding-top: 32px;
@@ -105,6 +104,7 @@ header {
 }
 .header-contacts {
   display: flex;
+  align-items: center;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
@@ -112,9 +112,25 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+.header-contact-list-item {
+  margin-right: 30px;
+}
+.header-contact-list-item {
+  display: flex;
+}
+.head-contact-link {
+  display: flex;
+  align-items: center;
+}
+.mail-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 
-.header-contacts .item + .item {
-  margin-left: 50px;
+.head-contact-link:hover,
+.head-contact-link:focus {
+  color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* Button */
@@ -147,6 +163,13 @@ header {
   padding: 6px 22px;
   text-align: center;
   border-radius: 5px;
+  border: none;
+}
+.button.portfolio.all {
+  color: var(--background-color-white);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btn-list {
   margin-right: 8px;
@@ -154,14 +177,13 @@ header {
 .btn-list:nth-child(5) {
   margin-right: 0;
 }
-
 .button.portfolio:hover,
 .button.portfolio:focus {
   background-color: var(--accent-color);
   color: var(--background-color-white);
 }
 .button.main:hover,
-.button.:focus {
+.button.main:focus {
   background-color: var(--botton-hover-blue);
 }
 .buttons {
@@ -169,9 +191,13 @@ header {
   justify-content: center;
   margin-bottom: 56px;
 }
+.button.portfolio:hover,
+.button.portfolio:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 /* Hero */
-
 .hero {
   background-color: var(--hero-background-grey);
   text-align: center;
@@ -241,6 +267,28 @@ header {
 }
 .section-info:nth-child(4) {
   margin-right: 0;
+}
+
+.section-info::before {
+  content: "";
+  height: 120px;
+  display: block;
+  background-color: var(--team-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.icon-first::before {
+  background-image: url(../images/antenna.svg);
+}
+.icon-second::before {
+  background-image: url(../images/clock.svg);
+}
+.icon-third::before {
+  background-image: url(../images/diagram.svg);
+}
+.icon-fourth::before {
+  background-image: url(../images/astronaut.svg);
 }
 /* Activity*/
 
@@ -364,9 +412,15 @@ header {
 .flex-elements:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+.flex-elements:hover,
+.flex-elements:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .card {
   display: block;
+  text-decoration: none;
 }
 
 .title-card {
@@ -399,9 +453,7 @@ header {
 }
 
 /* footer*/
-.test-class {
-  margin-bottom: 20px;
-}
+
 .class {
   font-family: Raleway;
   font-style: normal;
@@ -458,4 +510,54 @@ header {
 }
 .footer-class:nth-child(3) {
   margin-bottom: 0;
+}
+
+/* footer-icons*/
+
+.footer-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color-white);
+}
+.footer-social-link-wrapper {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+.general-footer {
+  display: flex;
+  align-items: baseline;
+}
+.footer-social-icon {
+  display: flex;
+}
+.logo-footer-class {
+  margin-bottom: 20px;
+}
+.footer-first {
+  padding-right: 10px;
+}
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+.footer-social-list-footer {
+  fill: var(--background-color-white);
 }
