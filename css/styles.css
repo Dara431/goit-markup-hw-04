@@ -607,7 +607,7 @@ header {
 .logo-footer-class {
   margin-bottom: 20px;
 }
-.footer-first {
+.footer-first:not(:last-child) {
   padding-right: 10px;
 }
 .footer-social-link {
