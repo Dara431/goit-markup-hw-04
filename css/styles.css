@@ -8,6 +8,7 @@
   --botton-background-color: #f5f4fa;
   --team-background-color: #f5f4fa;
   --botton-hover-blue: #188ce8;
+  --social-links-color: #afb1b8;
 }
 
 body {
@@ -247,7 +248,8 @@ header {
   font-size: 14px;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
@@ -348,6 +350,7 @@ header {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 16px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -378,7 +381,6 @@ header {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 .team-worker:nth-child(4) {
   margin-right: 0;
 }
@@ -389,6 +391,69 @@ header {
 .third-section {
   padding-bottom: 94px;
 }
+
+.team-list-icon {
+  display: flex;
+  width: 206px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.team-link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--background-color-white);
+  border-radius: 50%;
+  color: var(--social-links-color);
+}
+.team-icon {
+  fill: currentColor;
+}
+.team-link-icon:hover,
+.team-link-icon:focus {
+  color: var(--background-color-white);
+  background-color: var(--accent-color);
+}
+/* Постоянные клиенты*/
+.clients-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.clients-list {
+  display: flex;
+}
+.clients-icon {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-icon-img {
+  fill: #afb1b8;
+  padding: 16px 32px;
+}
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-icon-img:hover {
+  fill: var(--accent-color);
+}
+.clients-icon:hover {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
 /* Портфолио */
 .list-section {
   padding-top: 94px;
