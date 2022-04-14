@@ -41,12 +41,13 @@ header {
 }
 .img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 /* Site nav */
 .container .all-nav {
   width: 1200px;
+
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -55,6 +56,7 @@ header {
 .all-nav {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 .main-nav {
   display: flex;
@@ -122,16 +124,24 @@ header {
 .head-contact-link {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  height: 80px;
 }
 .mail-icon {
   margin-right: 10px;
   fill: currentColor;
+  height: 80px;
 }
 
 .head-contact-link:hover,
 .head-contact-link:focus {
   color: var(--accent-color);
   cursor: pointer;
+}
+.class {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* Button */
@@ -241,12 +251,11 @@ header {
 .section-list .info-title {
   color: var(--secondary-text-color);
 }
-
 .title {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.1;
   margin-top: 0;
   padding-bottom: 10px;
   margin-bottom: 0;
@@ -258,7 +267,7 @@ header {
   font-family: "Roboto";
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   margin-top: 0;
   margin-bottom: 0;
   letter-spacing: 0.03em;
@@ -269,6 +278,10 @@ header {
 }
 .section-info:nth-child(4) {
   margin-right: 0;
+}
+.section-info {
+  width: 270px;
+  height: 251px;
 }
 
 .section-info::before {
@@ -337,8 +350,7 @@ header {
   font-size: 16px;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -349,8 +361,7 @@ header {
   font-size: 16px;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -525,6 +536,8 @@ header {
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
+  padding-bottom: 0;
+  padding-top: 0;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #2196f3;
@@ -548,8 +561,9 @@ header {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
+  min-width: 230px;
 }
 .site-footer {
   background-color: var(--hero-background-grey);
